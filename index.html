@@ -11,12 +11,12 @@
     <h1>titulo</h1>
     <form action="https://formspree.io/f/movarnkr" method="POST">
         <p>Digite seu nome</p>
-        <input type="text" name="Nome do usuário"  placeholder="Nome Completo" >
+        <input type="text" name="Nome do usuário"  placeholder="Nome Completo" required >
         <p>Digite seu email</p>
-        <input type="email" name="" placeholder="email@gmail.com">
+        <input type="email" name="" placeholder="email@gmail.com" required>
         <p>Você trabalha?</p>
-        <input type="radio" value="sim">Sim
-        <input type="radio" value="nao">Não
+        <input type="radio" value="sim" required>Sim
+        <input type="radio" value="nao" required>Não
         <p>Selecione seu Estado:</p>
         <select name="estados" id="">
             <option value="Acre">Acre</option>
@@ -59,9 +59,9 @@
         </select>
         <p>Deixe suas reclamação:</p>
         <textarea name="comentario" id=""></textarea><br>
-        <input type="checkbox">Li, e concordo <br><br>
-        <button type="submit">envie</button>
-        <button type="reset">cancelar</button>
+        <input type="checkbox" required>Li, e concordo <br><br>
+        <button type="submit" required >envie</button>
+        <button type="reset" required >cancelar</button>
     </form>
 </body>
 
